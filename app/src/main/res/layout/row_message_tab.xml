@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/row_each">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="horizontal"
+                    android:elevation="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/row_details"
+                    android:background="@drawable/rect_shape">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:textIsSelectable="true"
+        android:textColor="#000"
+        android:id="@+id/row_name"
+        android:gravity="center"
+        android:text="Debit"
+        android:layout_alignParentTop="true"
+        android:textAppearance="?android:textAppearanceSmall" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_below="@id/row_name"
+            android:textColor="#000"
+            android:text="3/1/2016"
+            android:id="@+id/row_date"
+            android:textAppearance="?android:textAppearanceSmall"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:id="@+id/row_money"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:layout_weight="3"
+            android:text="Rs. 250"/>
+
+    </LinearLayout>
+        </RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal"
+                  android:visibility="gone"
+                  android:background="@drawable/rect_shape"
+                  android:elevation="16dp"
+                  android:id="@+id/row_edit"
+                  android:layout_below="@id/row_details"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/row_btn_del"
+            android:text="Delete"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:layout_toRightOf="@id/row_btn_del"
+            android:id="@+id/row_btn_edit"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/row_btn_edit"
+            android:text="Delete"
+            style="?android:borderlessButtonStyle"
+            android:background="@drawable/item_selector"
+            android:id="@+id/delButton"
+            android:textColor="@color/text_color"
+            android:padding="5dp"/>
+
+    </RelativeLayout>
+</RelativeLayout>

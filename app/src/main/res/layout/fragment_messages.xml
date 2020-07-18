@@ -1,0 +1,27 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/tab2"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DepositHeading"
+
+        android:paddingLeft="5dp"
+        android:textColor="#08a908"
+        android:text="Deposit Messages"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/totalCount"
+        android:layout_alignParentRight="true"
+        android:textColor="#000"
+        android:paddingRight="10dp"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/DepositHeading"
+        android:id="@+id/list_sms">
+    </ListView>
+</RelativeLayout>

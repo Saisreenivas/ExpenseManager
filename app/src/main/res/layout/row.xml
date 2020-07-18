@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="5dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/item_selector">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblNumber"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textAppearance="?android:textAppearanceMedium"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblNumber"
+        android:id="@+id/lblDate"
+        android:paddingRight="5dp"
+        android:textColor="#000"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textAppearance="?android:textAppearanceMedium"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblMsg"
+        android:layout_below="@id/lblNumber"
+        android:textColor="#000"
+        android:paddingTop="5dp"
+        android:textAppearance="?android:textAppearanceSmall"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/lblMsg"
+        android:layout_below="@id/lblNumber"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:textColor="#000"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:id="@+id/lblAmount"/>
+
+</RelativeLayout>

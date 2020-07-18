@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Expense Manager</string>
+    <string-array name="month_name">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <string-array name="message_check">
+        <item>Deposit</item>
+        <item>deposit</item>
+        <item>Debit</item>
+        <item>debit</item>
+        <item>Credit</item>
+        <item>credit</item>
+        <item>Balance</item>
+        <item>balance</item>
+        <item>purchase</item>
+        <item>Purchase</item>
+    </string-array>
+    <string-array name="money_check">
+        <item>Rs.</item>
+        <item>Rs</item>
+        <item>Rs </item>
+        <item>Rs. </item>
+        <item>INR </item>
+        <item>INR</item>
+        <item>Bal:</item>
+        <item>bal:</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
